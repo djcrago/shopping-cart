@@ -1,7 +1,6 @@
 import App from './App';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import ShopPage from './components/ShopPage/ShopPage';
-import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 
 const routes = [
   {
@@ -12,10 +11,6 @@ const routes = [
   {
     path: 'shop',
     element: <ShopPage />,
-  },
-  {
-    path: 'cart',
-    element: <ShoppingCart />,
   },
 ];
 

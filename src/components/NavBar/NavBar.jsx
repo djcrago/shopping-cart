@@ -7,7 +7,7 @@ function NavBar() {
     <nav>
       <Link to="/">Home</Link>
       <Link>Trips</Link>
-      <Link to="shop" className={styles.link}>
+      <Link to="/shop" className={styles.link}>
         Shop
       </Link>
       <ShoppingCart />
