@@ -1,9 +1,11 @@
 import styles from './ShopCard.module.css';
 
-function ShopCard() {
+function ShopCard({ info }) {
   return (
-    <div>
-      <p className={styles.card}>Card</p>
+    <div className={styles.card}>
+      <h3>{info.title}</h3>
+      <p>{info.description}</p>
+      <p>{info.price}</p>
     </div>
   );
 }
