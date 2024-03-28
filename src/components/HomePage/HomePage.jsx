@@ -3,7 +3,6 @@ import HomeBody from '../HomeBody/HomeBody';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import styles from './HomePage.module.css';
-import Button from '../Button/Button';
 import HomeTrips from '../HomeTrips/HomeTrips';
 
 function HomePage() {
@@ -12,7 +11,6 @@ function HomePage() {
       <Header />
       <NavBar />
       <HomeBody />
-      <Button />
       <HomeTrips />
       <Footer />
     </div>
