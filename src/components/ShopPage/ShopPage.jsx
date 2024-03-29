@@ -19,7 +19,13 @@ function useShopInfo() {
         }
         return response.json();
       })
-      .then((response) => setCategories(response))
+      .then((response) => {
+        const desiredOrder = [];
+        for (let i = response.length - 1; i >= 0; i -= 1) {
+          desiredOrder.push(response[i]);
+        }
+        setCategories(desiredOrder);
+      })
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
 
