@@ -1,5 +1,6 @@
 import ShopCard from '../ShopCard/ShopCard';
 import styles from './ShopCategory.module.css';
+import PropTypes from 'prop-types';
 
 function ShopCategory({ info, cartItems, setCartItems }) {
   return (
@@ -16,5 +17,11 @@ function ShopCategory({ info, cartItems, setCartItems }) {
     </div>
   );
 }
+
+ShopCategory.propTypes = {
+  info: PropTypes.object,
+  cartItems: PropTypes.array,
+  setCartItems: PropTypes.func,
+};
 
 export default ShopCategory;

@@ -1,4 +1,5 @@
 import styles from './ShoppingCart.module.css';
+import PropTypes from 'prop-types';
 
 function ShoppingCart({ cartItemsLength }) {
   return (
@@ -8,5 +9,9 @@ function ShoppingCart({ cartItemsLength }) {
     </div>
   );
 }
+
+ShoppingCart.propTypes = {
+  cartItemsLength: PropTypes.number,
+};
 
 export default ShoppingCart;

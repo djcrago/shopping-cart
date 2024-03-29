@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './ShopCard.module.css';
 import numberOfValues from '../../numberOfValues';
+import PropTypes from 'prop-types';
 
 function ShopCard({ info, cartItems, setCartItems }) {
   const [inputValue, setInputValue] = useState(0);
@@ -82,5 +83,11 @@ function ShopCard({ info, cartItems, setCartItems }) {
     </div>
   );
 }
+
+ShopCard.propTypes = {
+  info: PropTypes.object,
+  cartItems: PropTypes.array,
+  setCartItems: PropTypes.func,
+};
 
 export default ShopCard;
