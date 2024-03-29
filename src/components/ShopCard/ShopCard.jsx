@@ -66,6 +66,7 @@ function ShopCard({ info, cartItems, setCartItems }) {
   return (
     <div className={styles.card}>
       <h3>{info.title}</h3>
+      <img src={info.image} alt={info.title} />
       <p>{info.description}</p>
       <p>{info.price}</p>
       <button type="button" onClick={handleChange}>
