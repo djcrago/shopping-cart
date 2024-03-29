@@ -1,16 +1,16 @@
 import ShopCard from '../ShopCard/ShopCard';
 import styles from './ShopCategory.module.css';
 
-function ShopCategory({ info, totalCount, setTotalCount }) {
+function ShopCategory({ info, cartItems, setCartItems }) {
   return (
     <div className={styles.category}>
       <h2>{info.title}</h2>
       {info.cards.map((card) => (
         <ShopCard
-          key={card}
+          key={card.title}
           info={card}
-          totalCount={totalCount}
-          setTotalCount={setTotalCount}
+          cartItems={cartItems}
+          setCartItems={setCartItems}
         />
       ))}
     </div>

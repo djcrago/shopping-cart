@@ -2,7 +2,7 @@ import ShoppingCart from '../ShoppingCart/ShoppingCart';
 import styles from './NavBar.module.css';
 import { Link } from 'react-router-dom';
 
-function NavBar({ totalCount }) {
+function NavBar({ cartItemsLength }) {
   return (
     <nav>
       <Link to="/">Home</Link>
@@ -10,7 +10,7 @@ function NavBar({ totalCount }) {
       <Link to="/shop" className={styles.link}>
         Shop
       </Link>
-      <ShoppingCart totalCount={totalCount} />
+      <ShoppingCart cartItemsLength={cartItemsLength} />
     </nav>
   );
 }

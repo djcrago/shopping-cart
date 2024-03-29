@@ -7,18 +7,18 @@ import shopCategories from '../../shop-information';
 import { useState } from 'react';
 
 function ShopPage() {
-  const [totalCount, setTotalCount] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
 
   return (
     <div className={styles.shop}>
       <Header />
-      <NavBar totalCount={totalCount} />
+      <NavBar cartItemsLength={cartItems.length} />
       {shopCategories.map((category) => (
         <ShopCategory
-          key={category}
+          key={category.title}
           info={category}
-          totalCount={totalCount}
-          setTotalCount={setTotalCount}
+          cartItems={cartItems}
+          setCartItems={setCartItems}
         />
       ))}
       <Footer />

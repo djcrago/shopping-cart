@@ -1,10 +1,10 @@
 import styles from './ShoppingCart.module.css';
 
-function ShoppingCart({ totalCount }) {
+function ShoppingCart({ cartItemsLength }) {
   return (
     <div>
       <p className={styles.cart}>Shopping Cart</p>
-      <p>{totalCount}</p>
+      <p>{cartItemsLength}</p>
     </div>
   );
 }
