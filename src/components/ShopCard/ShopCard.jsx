@@ -68,7 +68,7 @@ function ShopCard({ info, cartItems, setCartItems }) {
       <h3>{info.title}</h3>
       <img src={info.image} alt={info.title} />
       <p>{info.description}</p>
-      <p>{info.price}</p>
+      <p>{'$' + info.price}</p>
       <button type="button" onClick={handleChange}>
         -
       </button>
