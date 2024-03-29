@@ -9,7 +9,7 @@ function ErrorPage() {
       <Header />
       <NavBar />
       <div className={styles.error}>
-        <h2>Error: Page not found</h2>
+        <h2>There was an unexpected error.</h2>
         <p>Navigate using links above.</p>
       </div>
       <Footer />

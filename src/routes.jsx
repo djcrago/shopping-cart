@@ -4,13 +4,17 @@ import ShopPage from './components/ShopPage/ShopPage';
 
 const routes = [
   {
-    path: '/',
-    element: <App />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: 'shop',
-    element: <ShopPage />,
+    children: [
+      {
+        path: '/',
+        element: <App />,
+      },
+      {
+        path: 'shop',
+        element: <ShopPage />,
+      },
+    ],
   },
 ];
 
