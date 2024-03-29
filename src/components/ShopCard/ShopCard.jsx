@@ -7,17 +7,21 @@ function ShopCard({ info, cartItems, setCartItems }) {
 
   function handleChange(event) {
     const cartItemsCopy = [...cartItems];
-    const previousNumberOfItems = numberOfValues(cartItemsCopy, info.title);
 
     if (event.target.type === 'number') {
       const newNumberOfItems = +event.target.value;
+      const previousNumberOfItems = numberOfValues(cartItemsCopy, info.title);
 
-      if (newNumberOfItems >= 0) {
+      if (newNumberOfItems >= 0 && newNumberOfItems <= 100) {
         setInputValue(newNumberOfItems);
       }
 
       if (previousNumberOfItems < newNumberOfItems) {
-        for (let i = previousNumberOfItems; i < newNumberOfItems; i += 1) {
+        for (
+          let i = previousNumberOfItems;
+          i < newNumberOfItems && i < 100;
+          i += 1
+        ) {
           cartItemsCopy.push(info.title);
         }
       }
@@ -36,8 +40,10 @@ function ShopCard({ info, cartItems, setCartItems }) {
       let newInputValue;
 
       if (event.target.textContent === '+') {
-        cartItemsCopy.push(info.title);
-        newInputValue = inputValue + 1;
+        if (inputValue < 100) {
+          cartItemsCopy.push(info.title);
+          newInputValue = inputValue + 1;
+        }
       }
 
       if (event.target.textContent === '-') {
@@ -68,7 +74,7 @@ function ShopCard({ info, cartItems, setCartItems }) {
         type="number"
         id={info.title}
         onChange={handleChange}
-        value={inputValue}
+        value={inputValue.toString()}
       />
       <button type="button" onClick={handleChange}>
         +
