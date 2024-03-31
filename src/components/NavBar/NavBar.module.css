@@ -1,3 +1,53 @@
-.link {
-  color: purple;
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  margin-left: 7vw;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 5vh;
+  font-size: 1.1875rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  transform: scale(1.1) translateZ(0);
+  transition:
+    transform 0.1s,
+    box-shadow 0.5s;
+  box-shadow: 0 5px 0 -1px rgb(0, 242, 255);
+}
+
+.link:active {
+  color: gray;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  min-width: 7vw;
+}
+
+.cart > .link {
+  display: flex;
+}
+
+.cart > .link:hover {
+  transform: scale(1);
+  box-shadow: 0 5px 0 -1px rgb(0, 242, 255);
+  transition:
+    transform,
+    box-shadow 0.5s;
 }

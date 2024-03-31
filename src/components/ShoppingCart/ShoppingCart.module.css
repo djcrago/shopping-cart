@@ -1,3 +1,6 @@
 .cart {
-  background-color: white;
+  text-align: center;
+  background-color: lightgray;
+  padding: 4px 8px;
+  border-radius: 8px;
 }

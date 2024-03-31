@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 
 function ShoppingCart({ cartItemsLength }) {
   return (
-    <div>
-      <p className={styles.cart}>Shopping Cart</p>
-      <p>{cartItemsLength}</p>
-    </div>
+    cartItemsLength >= 0 && <div className={styles.cart}>{cartItemsLength}</div>
   );
 }
 

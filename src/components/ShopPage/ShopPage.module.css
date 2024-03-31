@@ -1,3 +1,5 @@
 .shop {
   composes: home from '../HomePage/HomePage.module.css';
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
