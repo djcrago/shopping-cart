@@ -2,8 +2,8 @@ import styles from './Footer.module.css';
 
 function Footer() {
   return (
-    <div>
-      <h3 className={styles.text}>Footer</h3>
+    <div className={styles.footer}>
+      <p>Questions? Email us at adventureoutpost@notarealemail.com</p>
     </div>
   );
 }

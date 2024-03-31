@@ -1,3 +1,5 @@
-.text {
-  color: green;
+.footer {
+  composes: header from '../Header/Header.module.css';
+  margin-top: auto;
+  font-size: 1.25rem;
 }
