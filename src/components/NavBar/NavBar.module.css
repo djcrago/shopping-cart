@@ -15,10 +15,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.link:link,
-.link:visited {
+.link {
   text-decoration: none;
   color: black;
+  transform: scale(1) translateZ(0);
+  transition:
+    transform 0.1s,
+    box-shadow 0.5s;
+  box-shadow: none;
 }
 
 .link:hover {
