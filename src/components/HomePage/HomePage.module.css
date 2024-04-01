@@ -5,3 +5,49 @@
   flex-direction: column;
   align-items: center;
 }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+  width: 100vw;
+  height: 100%;
+  background: center/cover url('../../assets/mountains.png');
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 7.5vh;
+  color: rgb(0, 30, 0);
+  font-size: 2.25rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.link {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 83, 0, 0.939);
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  transform: scale(1) translateZ(0);
+  transition:
+    transform 0.5s,
+    opacity 0.5s;
+}
+
+.link:hover {
+  transform: scale(1.1) translateZ(0);
+  opacity: 0.9;
+  transition:
+    transform 0.5s,
+    opacity 0.5s;
+}

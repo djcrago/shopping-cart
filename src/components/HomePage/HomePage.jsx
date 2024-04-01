@@ -9,15 +9,11 @@ function HomePage() {
     <div className={styles.home}>
       <Header />
       <NavBar />
-      <div>
-        <p className={styles.text}>Body</p>
+      <div className={styles.body}>
+        <p className={styles.text}>Get Out There</p>
         <Link to="/shop" className={styles.link}>
-          Shop
+          Shop Now
         </Link>
-      </div>
-      <div>
-        <p className={styles.trips}>Home Trips</p>
-        <Link>Trips</Link>
       </div>
       <Footer />
     </div>
