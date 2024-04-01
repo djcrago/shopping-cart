@@ -1,3 +1,10 @@
-.category {
-  background-color: white;
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 2vh;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
