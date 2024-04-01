@@ -1,3 +1,74 @@
 .card {
-  color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
+  align-items: center;
+  padding: 16px;
+  border-radius: 24px;
+  transform: scale(1);
+  box-shadow: 3px 3px 3px 2px rgb(232, 232, 232);
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.025);
+  transition: transform 0.5s;
+}
+
+.card > h3 {
+  width: 30vw;
+}
+
+.card > img {
+  width: 20vw;
+  height: auto;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: 1.25rem;
+}
+
+.price button {
+  color: white;
+  background-color: rgba(0, 84, 0, 0.8);
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.price button:hover {
+  background-color: rgba(0, 84, 0);
+  transition: background-color 0.2s;
+}
+
+.price button:active {
+  background-color: rgba(0, 84, 0, 0.8);
+}
+
+.add {
+  padding: 8px;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.numberOfItems {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.numberOfItems button {
+  width: 35px;
+  height: 35px;
+  font-size: 1rem;
+}
+
+.numberOfItems input {
+  height: 35px;
+  width: 55px;
+  text-align: center;
+  font-size: 1rem;
 }

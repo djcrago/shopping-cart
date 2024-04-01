@@ -40,7 +40,10 @@ function ShopCard({ info, cartItems, setCartItems }) {
     if (event.target.type === 'button') {
       let newInputValue;
 
-      if (event.target.textContent === '+') {
+      if (
+        event.target.textContent === '+' ||
+        event.target.textContent === 'Add to Cart'
+      ) {
         if (inputValue < 100) {
           cartItemsCopy.push(info.title);
           newInputValue = inputValue + 1;
@@ -67,20 +70,30 @@ function ShopCard({ info, cartItems, setCartItems }) {
     <div className={styles.card}>
       <h3>{info.title}</h3>
       <img src={info.image} alt={info.title} />
-      <p>{info.description}</p>
-      <p>{'$' + info.price}</p>
-      <button type="button" onClick={handleChange}>
-        -
-      </button>
-      <input
-        type="number"
-        id={info.title}
-        onChange={handleChange}
-        value={inputValue.toString()}
-      />
-      <button type="button" onClick={handleChange}>
-        +
-      </button>
+      <div className={styles.price}>
+        <p>{'$' + info.price}</p>
+        {inputValue === 0 && (
+          <button className={styles.add} type="button" onClick={handleChange}>
+            Add to Cart
+          </button>
+        )}
+        {inputValue > 0 && (
+          <div className={styles.numberOfItems}>
+            <button type="button" onClick={handleChange}>
+              -
+            </button>
+            <input
+              type="number"
+              id={info.title}
+              onChange={handleChange}
+              value={inputValue.toString()}
+            />
+            <button type="button" onClick={handleChange}>
+              +
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
