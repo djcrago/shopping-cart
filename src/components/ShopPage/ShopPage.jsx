@@ -64,16 +64,18 @@ function ShopPage() {
     <div className={styles.shop}>
       <Header />
       <NavBar cartItemsLength={cartItems.length} />
-      {categories &&
-        products &&
-        categories.map((category) => (
-          <ShopCategory
-            key={category}
-            info={{ category, products }}
-            cartItems={cartItems}
-            setCartItems={setCartItems}
-          />
-        ))}
+      <div className={styles.body}>
+        {categories &&
+          products &&
+          categories.map((category) => (
+            <ShopCategory
+              key={category}
+              info={{ category, products }}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+            />
+          ))}
+      </div>
       <Footer />
     </div>
   );

@@ -3,3 +3,13 @@
   overflow-x: hidden;
   scrollbar-width: none;
 }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  width: 100vw;
+  padding: 5vh;
+  background-color: rgba(0, 100, 0, 0.058);
+}
