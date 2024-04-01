@@ -55,7 +55,9 @@ function ShopPage() {
       <div className={styles.shop}>
         <Header />
         <NavBar cartItemsLength={cartItems.length} />
-        <h2>One moment please</h2>
+        <div className={styles.body}>
+          <h2>One Moment Please...</h2>
+        </div>
         <Footer />
       </div>
     );

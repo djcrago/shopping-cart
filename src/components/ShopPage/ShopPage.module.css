@@ -1,7 +1,5 @@
 .shop {
   composes: home from '../HomePage/HomePage.module.css';
-  overflow-x: hidden;
-  scrollbar-width: none;
 }
 
 .body {
@@ -10,6 +8,8 @@
   align-items: center;
   gap: 5vh;
   width: 100vw;
+  height: 100%;
   padding: 5vh;
   background-color: rgba(0, 100, 0, 0.058);
+  overflow-y: scroll;
 }
