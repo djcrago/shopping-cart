@@ -40,7 +40,7 @@
 .cart {
   display: flex;
   align-items: center;
-  gap: 0.5vw;
+  gap: 1vw;
   min-width: 7vw;
 }
 
