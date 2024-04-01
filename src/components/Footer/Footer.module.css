@@ -1,5 +1,6 @@
 .footer {
   composes: header from '../Header/Header.module.css';
+  height: 6vh;
   margin-top: auto;
   font-size: 1.25rem;
 }

@@ -1,3 +1,20 @@
 .error {
-  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  width: 100vw;
+  height: 81.5vh;
+  background-color: rgba(0, 100, 0, 0.033);
+  padding-top: 10vh;
+}
+
+.body p {
+  font-size: 1.25rem;
 }
