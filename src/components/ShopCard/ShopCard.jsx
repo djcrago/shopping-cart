@@ -13,16 +13,12 @@ function ShopCard({ info, cartItems, setCartItems }) {
       const newNumberOfItems = +event.target.value;
       const previousNumberOfItems = numberOfValues(cartItemsCopy, info.title);
 
-      if (newNumberOfItems >= 0 && newNumberOfItems <= 100) {
+      if (newNumberOfItems > 0 && newNumberOfItems <= 100) {
         setInputValue(newNumberOfItems);
       }
 
-      if (previousNumberOfItems < newNumberOfItems) {
-        for (
-          let i = previousNumberOfItems;
-          i < newNumberOfItems && i < 100;
-          i += 1
-        ) {
+      if (previousNumberOfItems < newNumberOfItems && newNumberOfItems <= 100) {
+        for (let i = previousNumberOfItems; i < newNumberOfItems; i += 1) {
           cartItemsCopy.push(info.title);
         }
       }
