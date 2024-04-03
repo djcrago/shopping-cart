@@ -15,6 +15,7 @@
   width: 100vw;
   height: 100%;
   background: center/cover no-repeat url('../../assets/mountains.png');
+  background-color: rgba(255, 102, 0, 0.09);
 }
 
 .text {
