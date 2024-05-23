@@ -1,4 +1,4 @@
-# Inventory Application
+# Shopping Cart
 
 This repository houses an example e-commerce website where users can add and remove items from their cart.
 The live website can be found here: https://djcrago-shopping-cart.netlify.app/
