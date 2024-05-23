@@ -1,6 +1,9 @@
 {
   "name": "shopping-cart",
   "private": true,
+  "author": "Dexter Crago",
+  "description": "This repository houses an example e-commerce website where users can add and remove items from their cart.",
+  "license": "ISC",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

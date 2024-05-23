@@ -1,11 +1,20 @@
-In this project I...
+# Inventory Application
 
-- Created a multi-page React app using react-router-dom
-- Became more familiar with react-router-dom
-- Organized components and their style sheets in folders
-- Used css modules for the first time
-- Practiced using css transitions in reverse to make more visually appealing
-  hover effects.
-- Practiced fetching data with an API in React
-- Practiced processing the fetched data
-- Practiced conditionally rendering parts of a component
+This repository houses an example e-commerce website where users can add and remove items from their cart.
+The live website can be found here: https://djcrago-shopping-cart.netlify.app/
+
+Screenshot of Live Website:
+![Screenshot of website this repository houses](./website-screenshot.png?raw=true 'Website Screenshot')
+
+## Features
+
+- A multi-page React app created using react-router-dom
+- Organized components and style sheets in seperate directories
+- CSS modules
+- Hover effects that utilize transitions
+- Fetching and processing data from an API in React
+- Logic to conditionally render parts of a component
+
+## License
+
+The project is licensed under the ISC license.
